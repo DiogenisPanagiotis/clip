@@ -29,7 +29,7 @@ class ModalTags extends Component {
     renderCreatable() {
 	    const { editingBookmark } = this.props.exampleReducer
 	    const { bookmarks } = this.props.exampleReducer
-	    if (editingBookmark) {    	
+	    if (Object.keys(editingBookmark).length > 0) {    	
 		    const tags = bookmarks[editingBookmark.index].tags
 	        return (
 	            <Creatable 
