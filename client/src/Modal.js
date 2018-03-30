@@ -29,9 +29,11 @@ class Modal extends Component {
         const { addLink } = this.props.actions
 
         getTitle(`https://crossorigin.me/${link}`, (err, title) => {
+            console.log(title)
+            console.log(err)
             addLink({
                 url: link,
-                title: err ? 'No Title' : title,
+                title: err ? 'No Title' : title.includes("Error") ? "No Title" : title,
                 tags: [],
                 date: new Date().toLocaleString()
             })
