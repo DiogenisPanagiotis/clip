@@ -4,8 +4,9 @@ import { connect } from 'react-redux'
 import actions from './actions/actions'
 import './App.css'
 // const getTitleAtUrl = require('get-title-at-url')
-const getTitle = require('get-title');
-const hyperquest = require('hyperquest');
+// const getTitle = require('get-title');
+// const hyperquest = require('hyperquest');
+const getTitle = require('url-to-title')
 
 class Modal extends Component {
     constructor(props) {
@@ -27,12 +28,10 @@ class Modal extends Component {
         const { link } = this.state 
         const { addLink } = this.props.actions
 
-        const stream = hyperquest(`https://crossorigin.me/${link}`)
-        getTitle(stream).then(title => {
-
+        getTitle(`https://crossorigin.me/${link}`, (err, title) => {
             addLink({
                 url: link,
-                title: title ? (title.indexOf("rror") !== -1 ? 'No Title' : title) : title,
+                title: err ? 'No Title' : title,
                 tags: [],
                 date: new Date().toLocaleString()
             })
