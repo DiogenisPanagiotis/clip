@@ -1,0 +1,133 @@
+.App {
+  /*text-align: center;*/
+}
+
+#left {
+  /*border: solid 1px red;*/
+/*  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #2F2F2F;*/
+}
+
+#right {
+  /*border: solid 1px red;  */
+/*  position: fixed;
+  top: 0;
+  bottom: 0;*/
+}
+
+#search {
+    margin-top: 50px;
+}
+
+.no-glow:focus {
+  border-color:#ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#addLinkBtn {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#modalSubmitButton {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+#exampleModal, #tagsModal {
+    margin-top: 15%;
+}
+
+.modal-content {
+    border-color: #fafafa!important;
+}
+
+.modal-footer {
+    /*height: 166px;*/
+    border-top: none;
+}
+
+#search-modal {
+    margin-bottom: 5px!important;
+}
+
+.modal-backdrop {
+    background: rgba(30,30,30,0.9);
+    opacity: 1!important;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.bookmark {
+    padding: 1rem;
+}
+
+.bookmarkTitle {
+    font-weight: 600;
+    color: #333;
+}
+
+.bookmarkTitle:hover {
+    color: #333;
+}
+
+.bookmarkUrl {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.bookmarkTime {
+    color: #aaa;
+    font-size: 12px;
+}
+
+#addTags {
+    color: #aaa;
+    font-size: 10px;
+    display: inline;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+#addTags:hover {
+    color: #5d5d5d;
+}
+
+.tags {
+    color: #aaa;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.tags:hover {
+    background-color: #f8f9fa;
+    border: solid 1px #f8f9fa;
+    color: #5d5d5d;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.c {
+    /*position: relative;*/
+    /*font-size: 14px;*/
+}
+.Select-clear-zone {
+/*    padding-left: 10px;
+    padding-right: 10px;*/
+}
+.Select-arrow-zone, .Select-menu-outer {
+    /*display: none!important;*/
+}
+

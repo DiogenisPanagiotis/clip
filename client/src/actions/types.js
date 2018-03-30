@@ -1,0 +1,3 @@
+export const ADD_BOOKMARK = "ADD_BOOKMARK"
+export const ADD_TAG = "ADD_TAG"
+export const EDITING_BOOKMARK = "EDITING_BOOKMARK"
